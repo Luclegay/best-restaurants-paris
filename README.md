@@ -15,7 +15,7 @@ Ce projet présente une sélection des meilleurs restaurants du 9ème arrondisse
 
 ## Fonctionnalités
 
-- Affichage des 5 meilleurs restaurants
+- Affichage des 10 meilleurs restaurants
 - Notes et évaluations Google
 - Horaires détaillés
 - Liens directs vers Google Maps
