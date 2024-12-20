@@ -1,1 +1,31 @@
-IyBNZWlsbGV1cnMgUmVzdGF1cmFudHMgZGUgUGFyaXMgLSA5w6htZSBhcnJvbmRpc3NlbWVudAoKQ2UgcHJvamV0IHByw6lzZW50ZSB1bmUgc8OpbGVjdGlvbiBkZXMgbWVpbGxldXJzIHJlc3RhdXJhbnRzIGR1IDnDqG1lIGFycm9uZGlzc2VtZW50IGRlIFBhcmlzLiBJbCBzJ2FnaXQgZCd1bmUgcGFnZSB3ZWIgc2ltcGxlIHF1aSBhZmZpY2hlIGxlcyBpbmZvcm1hdGlvbnMgZXNzZW50aWVsbGVzIGRlIGNoYXF1ZSDDqXRhYmxpc3NlbWVudCA6CgotIE5vdGVzIGV0IMOpdmFsdWF0aW9ucwotIEFkcmVzc2VzCi0gSG9yYWlyZXMgZCdvdXZlcnR1cmUKLSBMaWVucyB2ZXJzIEdvb2dsZSBNYXBzCgojIyBTdHJ1Y3R1cmUgZHUgcHJvamV0CgotIGBpbmRleC5odG1sYCA6IExhIHBhZ2Ugd2ViIHByaW5jaXBhbGUKLSBgYXNzZXRzL2AgOiBEb3NzaWVyIGNvbnRlbmFudCBsZXMgcmVzc291cmNlcyAoc3R5bGVzLCBpbWFnZXMsIGV0Yy4pCgojIyBGb25jdGlvbm5hbGl0w6lzCgotIEFmZmljaGFnZSBkZXMgNSBtZWlsbGV1cnMgcmVzdGF1cmFudHMKLSBOb3RlcyBldCDDqXZhbHVhdGlvbnMgR29vZ2xlCi0gSG9yYWlyZXMgZMOpdGFpbGzDqXMKLSBMaWVucyBkaXJlY3RzIHZlcnMgR29vZ2xlIE1hcHMKLSBEZXNpZ24gcmVzcG9uc2l2ZQoKIyMgQ29tbWVudCB1dGlsaXNlcgoKSWwgc3VmZml0IGQnb3V2cmlyIGxlIGZpY2hpZXIgYGluZGV4Lmh0bWxgIGRhbnMgdW4gbmF2aWdhdGV1ciB3ZWIgcG91ciB2b2lyIGxhIGxpc3RlIGRlcyByZXN0YXVyYW50cy4KCiMjIENvbnRyaWJ1dGlvbgoKTGVzIGNvbnRyaWJ1dGlvbnMgc29udCBsZXMgYmllbnZlbnVlcyAhIE4naMOpc2l0ZXogcGFzIMOgIHByb3Bvc2VyIGRlcyBhbcOpbGlvcmF0aW9ucyBvdSDDoCBzaWduYWxlciBkZXMgZXJyZXVycy4=
+# Meilleurs Restaurants de Paris - 9ème arrondissement
+
+Ce projet présente une sélection des meilleurs restaurants du 9ème arrondissement de Paris. Il s'agit d'une page web simple qui affiche les informations essentielles de chaque établissement :
+
+- Notes et évaluations
+- Adresses
+- Horaires d'ouverture
+- Liens vers Google Maps
+
+## Structure du projet
+
+- `index.html` : La page web principale
+- `images/` : Dossier contenant les vignettes des restaurants
+- `assets/` : Dossier contenant les ressources (styles, images, etc.)
+
+## Fonctionnalités
+
+- Affichage des 5 meilleurs restaurants
+- Notes et évaluations Google
+- Horaires détaillés
+- Liens directs vers Google Maps
+- Design responsive
+- Vignettes pour chaque restaurant
+
+## Comment utiliser
+
+Il suffit de visiter https://luclegay.github.io/best-restaurants-paris/ pour voir la liste des restaurants.
+
+## Contribution
+
+Les contributions sont les bienvenues ! N'hésitez pas à proposer des améliorations ou à signaler des erreurs.
