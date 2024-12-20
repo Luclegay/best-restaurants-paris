@@ -23,6 +23,19 @@
             padding: 20px;
             margin-bottom: 20px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 20px;
+        }
+        .thumbnail {
+            width: 200px;
+            height: 150px;
+            object-fit: contain;
+            border-radius: 4px;
+            background-color: #f8f8f8;
+        }
+        .restaurant-info {
+            flex: 1;
         }
         .restaurant-name {
             color: #d64242;
@@ -68,113 +81,147 @@
         .maps-link:hover {
             text-decoration: underline;
         }
+        @media (max-width: 600px) {
+            .restaurant-card {
+                grid-template-columns: 1fr;
+            }
+            .thumbnail {
+                width: 100%;
+                height: auto;
+            }
+        }
     </style>
 </head>
 <body>
     <h1>Les 5 Meilleurs Restaurants du 9e Arrondissement</h1>
     
     <div class="restaurant-card">
-        <h2 class="restaurant-name">Le Comptoir Boutary</h2>
-        <div class="rating">
-            <span class="stars">★★★★★</span> 4.9/5
-        </div>
-        <div class="address">32 Rue Catherine de la Rochefoucauld, 75009 Paris</div>
-        <a href="https://maps.google.com/?q=Le+Comptoir+Boutary+Paris" class="maps-link" target="_blank">Voir sur Google Maps</a>
-        <div class="hours">
-            <h3>Horaires d'ouverture :</h3>
-            <ul>
-                <li>Lundi : Fermé</li>
-                <li>Mardi : 19h00 - 22h30</li>
-                <li>Mercredi : 12h00 - 14h00, 19h00 - 22h30</li>
-                <li>Jeudi : 12h00 - 14h00, 19h00 - 22h30</li>
-                <li>Vendredi : 12h00 - 14h00, 19h00 - 23h00</li>
-                <li>Samedi : 19h00 - 23h00</li>
-                <li>Dimanche : Fermé</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="restaurant-card">
-        <h2 class="restaurant-name">Carnis Cantine</h2>
-        <div class="rating">
-            <span class="stars">★★★★★</span> 4.9/5
-        </div>
-        <div class="address">23 Rue des Martyrs, 75009 Paris</div>
-        <a href="https://maps.google.com/?q=Carnis+Cantine+Paris" class="maps-link" target="_blank">Voir sur Google Maps</a>
-        <div class="hours">
-            <h3>Horaires d'ouverture :</h3>
-            <ul>
-                <li>Lundi : 8h30 - 16h30</li>
-                <li>Mardi : 8h30 - 16h30</li>
-                <li>Mercredi : 8h30 - 16h30</li>
-                <li>Jeudi : 8h30 - 16h30</li>
-                <li>Vendredi : 8h30 - 16h30</li>
-                <li>Samedi : 9h30 - 18h00</li>
-                <li>Dimanche : 9h30 - 18h00</li>
-            </ul>
+        <object data="images/comptoir-boutary.svg" type="image/svg+xml" class="thumbnail">
+            <img src="images/comptoir-boutary.svg" alt="Le Comptoir Boutary" class="thumbnail">
+        </object>
+        <div class="restaurant-info">
+            <h2 class="restaurant-name">Le Comptoir Boutary</h2>
+            <div class="rating">
+                <span class="stars">★★★★★</span> 4.9/5
+            </div>
+            <div class="address">32 Rue Catherine de la Rochefoucauld, 75009 Paris</div>
+            <a href="https://maps.google.com/?q=Le+Comptoir+Boutary+Paris" class="maps-link" target="_blank">Voir sur Google Maps</a>
+            <div class="hours">
+                <h3>Horaires d'ouverture :</h3>
+                <ul>
+                    <li>Lundi : Fermé</li>
+                    <li>Mardi : 19h00 - 22h30</li>
+                    <li>Mercredi : 12h00 - 14h00, 19h00 - 22h30</li>
+                    <li>Jeudi : 12h00 - 14h00, 19h00 - 22h30</li>
+                    <li>Vendredi : 12h00 - 14h00, 19h00 - 23h00</li>
+                    <li>Samedi : 19h00 - 23h00</li>
+                    <li>Dimanche : Fermé</li>
+                </ul>
+            </div>
         </div>
     </div>
 
     <div class="restaurant-card">
-        <h2 class="restaurant-name">Les Canailles</h2>
-        <div class="rating">
-            <span class="stars">★★★★★</span> 4.8/5
-        </div>
-        <div class="address">25 Rue la Bruyère, 75009 Paris</div>
-        <a href="https://maps.google.com/?q=Les+Canailles+Paris" class="maps-link" target="_blank">Voir sur Google Maps</a>
-        <div class="hours">
-            <h3>Horaires d'ouverture :</h3>
-            <ul>
-                <li>Lundi : 12h00 - 14h00, 19h00 - 22h00</li>
-                <li>Mardi : 12h00 - 14h00, 19h00 - 22h00</li>
-                <li>Mercredi : 12h00 - 14h00, 19h00 - 22h00</li>
-                <li>Jeudi : 12h00 - 14h00, 19h00 - 22h00</li>
-                <li>Vendredi : 12h00 - 14h00, 19h00 - 22h00</li>
-                <li>Samedi : Fermé</li>
-                <li>Dimanche : Fermé</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="restaurant-card">
-        <h2 class="restaurant-name">La Padellina</h2>
-        <div class="rating">
-            <span class="stars">★★★★★</span> 4.8/5
-        </div>
-        <div class="address">1 Rue Chaptal, 75009 Paris</div>
-        <a href="https://maps.google.com/?q=La+Padellina+Paris" class="maps-link" target="_blank">Voir sur Google Maps</a>
-        <div class="hours">
-            <h3>Horaires d'ouverture :</h3>
-            <ul>
-                <li>Lundi : Fermé</li>
-                <li>Mardi : 12h00 - 14h30, 18h30 - 23h00</li>
-                <li>Mercredi : 12h00 - 14h30, 18h30 - 23h00</li>
-                <li>Jeudi : 12h00 - 14h30, 18h30 - 23h00</li>
-                <li>Vendredi : 12h00 - 14h30, 18h30 - 23h30</li>
-                <li>Samedi : 12h00 - 14h30, 18h30 - 23h30</li>
-                <li>Dimanche : 12h00 - 14h30, 18h00 - 22h30</li>
-            </ul>
+        <object data="images/carnis-cantine.svg" type="image/svg+xml" class="thumbnail">
+            <img src="images/carnis-cantine.svg" alt="Carnis Cantine" class="thumbnail">
+        </object>
+        <div class="restaurant-info">
+            <h2 class="restaurant-name">Carnis Cantine</h2>
+            <div class="rating">
+                <span class="stars">★★★★★</span> 4.9/5
+            </div>
+            <div class="address">23 Rue des Martyrs, 75009 Paris</div>
+            <a href="https://maps.google.com/?q=Carnis+Cantine+Paris" class="maps-link" target="_blank">Voir sur Google Maps</a>
+            <div class="hours">
+                <h3>Horaires d'ouverture :</h3>
+                <ul>
+                    <li>Lundi : 8h30 - 16h30</li>
+                    <li>Mardi : 8h30 - 16h30</li>
+                    <li>Mercredi : 8h30 - 16h30</li>
+                    <li>Jeudi : 8h30 - 16h30</li>
+                    <li>Vendredi : 8h30 - 16h30</li>
+                    <li>Samedi : 9h30 - 18h00</li>
+                    <li>Dimanche : 9h30 - 18h00</li>
+                </ul>
+            </div>
         </div>
     </div>
 
     <div class="restaurant-card">
-        <h2 class="restaurant-name">Pink Mamma</h2>
-        <div class="rating">
-            <span class="stars">★★★★★</span> 4.7/5
+        <object data="images/les-canailles.svg" type="image/svg+xml" class="thumbnail">
+            <img src="images/les-canailles.svg" alt="Les Canailles" class="thumbnail">
+        </object>
+        <div class="restaurant-info">
+            <h2 class="restaurant-name">Les Canailles</h2>
+            <div class="rating">
+                <span class="stars">★★★★★</span> 4.8/5
+            </div>
+            <div class="address">25 Rue la Bruyère, 75009 Paris</div>
+            <a href="https://maps.google.com/?q=Les+Canailles+Paris" class="maps-link" target="_blank">Voir sur Google Maps</a>
+            <div class="hours">
+                <h3>Horaires d'ouverture :</h3>
+                <ul>
+                    <li>Lundi : 12h00 - 14h00, 19h00 - 22h00</li>
+                    <li>Mardi : 12h00 - 14h00, 19h00 - 22h00</li>
+                    <li>Mercredi : 12h00 - 14h00, 19h00 - 22h00</li>
+                    <li>Jeudi : 12h00 - 14h00, 19h00 - 22h00</li>
+                    <li>Vendredi : 12h00 - 14h00, 19h00 - 22h00</li>
+                    <li>Samedi : Fermé</li>
+                    <li>Dimanche : Fermé</li>
+                </ul>
+            </div>
         </div>
-        <div class="address">20bis Rue de Douai, 75009 Paris</div>
-        <a href="https://maps.google.com/?q=Pink+Mamma+Paris" class="maps-link" target="_blank">Voir sur Google Maps</a>
-        <div class="hours">
-            <h3>Horaires d'ouverture :</h3>
-            <ul>
-                <li>Lundi : 12h00 - 14h15, 18h30 - 22h45</li>
-                <li>Mardi : 12h00 - 14h15, 18h30 - 22h45</li>
-                <li>Mercredi : 12h00 - 14h15, 18h30 - 22h45</li>
-                <li>Jeudi : 12h00 - 14h15, 18h30 - 23h00</li>
-                <li>Vendredi : 12h00 - 14h15, 18h30 - 23h00</li>
-                <li>Samedi : 12h00 - 16h15, 18h15 - 23h00</li>
-                <li>Dimanche : 12h00 - 16h15, 18h15 - 22h45</li>
-            </ul>
+    </div>
+
+    <div class="restaurant-card">
+        <object data="images/la-padellina.svg" type="image/svg+xml" class="thumbnail">
+            <img src="images/la-padellina.svg" alt="La Padellina" class="thumbnail">
+        </object>
+        <div class="restaurant-info">
+            <h2 class="restaurant-name">La Padellina</h2>
+            <div class="rating">
+                <span class="stars">★★★★★</span> 4.8/5
+            </div>
+            <div class="address">1 Rue Chaptal, 75009 Paris</div>
+            <a href="https://maps.google.com/?q=La+Padellina+Paris" class="maps-link" target="_blank">Voir sur Google Maps</a>
+            <div class="hours">
+                <h3>Horaires d'ouverture :</h3>
+                <ul>
+                    <li>Lundi : Fermé</li>
+                    <li>Mardi : 12h00 - 14h30, 18h30 - 23h00</li>
+                    <li>Mercredi : 12h00 - 14h30, 18h30 - 23h00</li>
+                    <li>Jeudi : 12h00 - 14h30, 18h30 - 23h00</li>
+                    <li>Vendredi : 12h00 - 14h30, 18h30 - 23h30</li>
+                    <li>Samedi : 12h00 - 14h30, 18h30 - 23h30</li>
+                    <li>Dimanche : 12h00 - 14h30, 18h00 - 22h30</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="restaurant-card">
+        <object data="images/pink-mamma.svg" type="image/svg+xml" class="thumbnail">
+            <img src="images/pink-mamma.svg" alt="Pink Mamma" class="thumbnail">
+        </object>
+        <div class="restaurant-info">
+            <h2 class="restaurant-name">Pink Mamma</h2>
+            <div class="rating">
+                <span class="stars">★★★★★</span> 4.7/5
+            </div>
+            <div class="address">20bis Rue de Douai, 75009 Paris</div>
+            <a href="https://maps.google.com/?q=Pink+Mamma+Paris" class="maps-link" target="_blank">Voir sur Google Maps</a>
+            <div class="hours">
+                <h3>Horaires d'ouverture :</h3>
+                <ul>
+                    <li>Lundi : 12h00 - 14h15, 18h30 - 22h45</li>
+                    <li>Mardi : 12h00 - 14h15, 18h30 - 22h45</li>
+                    <li>Mercredi : 12h00 - 14h15, 18h30 - 22h45</li>
+                    <li>Jeudi : 12h00 - 14h15, 18h30 - 23h00</li>
+                    <li>Vendredi : 12h00 - 14h15, 18h30 - 23h00</li>
+                    <li>Samedi : 12h00 - 16h15, 18h15 - 23h00</li>
+                    <li>Dimanche : 12h00 - 16h15, 18h15 - 22h45</li>
+                </ul>
+            </div>
         </div>
     </div>
 </body>
